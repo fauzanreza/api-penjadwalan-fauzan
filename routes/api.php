@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\DosenController;
 use App\Http\Controllers\ProdiController;
+use App\Http\Controllers\MahasiswaController;
+use App\Http\Controllers\MataKuliahController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -19,4 +21,6 @@ use Illuminate\Support\Facades\Route;
 Route::prefix('v1')->group(function () {
     Route::apiResource('dosen', DosenController::class);
     Route::apiResource('prodi', ProdiController::class);
+    Route::apiResource('mahasiswa', MahasiswaController::class);
+    Route::apiResource('mata-kuliah', MataKuliahController::class);
 });
