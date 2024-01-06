@@ -42,7 +42,7 @@ class RelasiMKController extends Controller
     public function update(Request $request, RelasiMK $relasiMatkul)
     {
         $validator = Validator::make($request->all(), [
-            'matkul_id' => 'required|integer|exists:mata_kuliahs,id',
+            'mata_kuliah_id' => 'required|integer|exists:mata_kuliahs,id',
             'mahasiswa_id' => 'required|integer|exists:mahasiswas,id',
         ]);
 
